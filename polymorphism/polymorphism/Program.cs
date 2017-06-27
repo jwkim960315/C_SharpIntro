@@ -21,6 +21,13 @@ namespace polymorphism
             oracle.Open();
             oracle.Close();
             Console.ReadLine();
+
+            var command1 = new DbCommand(sql);
+            var command2 = new DbCommand(oracle);
+
+            command1.Execute();
+            command2.Execute();
+            Console.ReadLine();
         }
     }
 }
